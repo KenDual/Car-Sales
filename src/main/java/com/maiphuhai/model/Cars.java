@@ -1,6 +1,6 @@
 package com.maiphuhai.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Cars {
     private int CarId;
@@ -11,13 +11,13 @@ public class Cars {
     private int ConditionId;
     private int Mileage;
     private String ExteriorColor;
-    private LocalDate CreatedAt;
-    private LocalDate ModifiedAt;
+    private LocalDateTime CreatedAt;
+    private LocalDateTime ModifiedAt;
     private boolean IsDeleted;
 
     public Cars(){}
 
-    public Cars(int carId, int modelId, String licensePlate, int manufactureYear, double price, int conditionId, int mileage, String exteriorColor, LocalDate createdAt, LocalDate modifiedAt, boolean isDeleted) {
+    public Cars(int carId, int modelId, String licensePlate, int manufactureYear, double price, int conditionId, int mileage, String exteriorColor, LocalDateTime createdAt, LocalDateTime modifiedAt, boolean isDeleted) {
         CarId = carId;
         ModelId = modelId;
         LicensePlate = licensePlate;
@@ -95,19 +95,19 @@ public class Cars {
         ExteriorColor = exteriorColor;
     }
 
-    public LocalDate getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return CreatedAt;
     }
 
-    public void setCreatedAt(LocalDate createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         CreatedAt = createdAt;
     }
 
-    public LocalDate getModifiedAt() {
+    public LocalDateTime getModifiedAt() {
         return ModifiedAt;
     }
 
-    public void setModifiedAt(LocalDate modifiedAt) {
+    public void setModifiedAt(LocalDateTime modifiedAt) {
         ModifiedAt = modifiedAt;
     }
 
