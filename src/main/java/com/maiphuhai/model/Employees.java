@@ -1,71 +1,62 @@
-package com.maiphuhai.model;
 
-import java.time.LocalDate;
+package com.maiphuhai.model;
 
 public class Employees {
     private int EmployeeId;
+    private int UserId;
     private String FullName;
     private String Position;
-    private LocalDate CreatedAt;
-    private LocalDate ModifiedAt;
-    private boolean IsDeleted;
-
+    private String Phone;
+    
     public Employees (){}
 
-    public Employees(int employeeId, String fullName, String position, LocalDate createdAt, LocalDate modifiedAt, boolean isDeleted) {
-        EmployeeId = employeeId;
-        FullName = fullName;
-        Position = position;
-        CreatedAt = createdAt;
-        ModifiedAt = modifiedAt;
-        IsDeleted = isDeleted;
+    public Employees(int EmployeeId, int UserId, String FullName, String Position, String Phone) {
+        this.EmployeeId = EmployeeId;
+        this.UserId = UserId;
+        this.FullName = FullName;
+        this.Position = Position;
+        this.Phone = Phone;
     }
 
     public int getEmployeeId() {
         return EmployeeId;
     }
 
-    public void setEmployeeId(int employeeId) {
-        EmployeeId = employeeId;
+    public void setEmployeeId(int EmployeeId) {
+        this.EmployeeId = EmployeeId;
+    }
+
+    public int getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(int UserId) {
+        this.UserId = UserId;
     }
 
     public String getFullName() {
         return FullName;
     }
 
-    public void setFullName(String fullName) {
-        FullName = fullName;
+    public void setFullName(String FullName) {
+        this.FullName = FullName;
     }
 
     public String getPosition() {
         return Position;
     }
 
-    public void setPosition(String position) {
-        Position = position;
+    public void setPosition(String Position) {
+        this.Position = Position;
     }
 
-    public LocalDate getCreatedAt() {
-        return CreatedAt;
+    public String getPhone() {
+        return Phone;
     }
 
-    public void setCreatedAt(LocalDate createdAt) {
-        CreatedAt = createdAt;
+    public void setPhone(String Phone) {
+        this.Phone = Phone;
     }
-
-    public LocalDate getModifiedAt() {
-        return ModifiedAt;
-    }
-
-    public void setModifiedAt(LocalDate modifiedAt) {
-        ModifiedAt = modifiedAt;
-    }
-
-    public boolean isDeleted() {
-        return IsDeleted;
-    }
-
-    public void setDeleted(boolean deleted) {
-        IsDeleted = deleted;
-    }
+    
+    
 }

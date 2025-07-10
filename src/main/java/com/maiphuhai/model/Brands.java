@@ -1,30 +1,32 @@
+
 package com.maiphuhai.model;
 
 public class Brands {
     private int BrandId;
-    private String name;
-
+    private String Name;
+    
     public Brands(){}
 
-    public Brands(int brandId, String name) {
-        BrandId = brandId;
-        this.name = name;
+    public Brands(int BrandId, String Name) {
+        this.BrandId = BrandId;
+        this.Name = Name;
     }
 
     public int getBrandId() {
         return BrandId;
     }
 
-    public void setBrandId(int brandId) {
-        BrandId = brandId;
+    public void setBrandId(int BrandId) {
+        this.BrandId = BrandId;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String Name) {
+        this.Name = Name;
     }
+    
+    
 }
-

@@ -1,89 +1,60 @@
-package com.maiphuhai.model;
 
-import java.time.LocalDate;
+package com.maiphuhai.model;
 
 public class Customers {
     private int CustomerId;
+    private int UserId;
     private String FullName;
     private String Phone;
-    private String Email;
     private String Address;
-    private LocalDate CreatedAt;
-    private LocalDate ModifiedAt;
-    private boolean isDeleted;
+    
+    public Customers(){}
 
-    public Customers(int customerId, String fullName, String phone, String email, String address, LocalDate createdAt, LocalDate modifiedAt, boolean isDeleted) {
-        CustomerId = customerId;
-        FullName = fullName;
-        Phone = phone;
-        Email = email;
-        Address = address;
-        CreatedAt = createdAt;
-        ModifiedAt = modifiedAt;
-        this.isDeleted = isDeleted;
+    public Customers(int CustomerId, int UserId, String FullName, String Phone, String Address) {
+        this.CustomerId = CustomerId;
+        this.UserId = UserId;
+        this.FullName = FullName;
+        this.Phone = Phone;
+        this.Address = Address;
     }
 
     public int getCustomerId() {
         return CustomerId;
     }
 
-    public void setCustomerId(int customerId) {
-        CustomerId = customerId;
+    public void setCustomerId(int CustomerId) {
+        this.CustomerId = CustomerId;
+    }
+
+    public int getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(int UserId) {
+        this.UserId = UserId;
     }
 
     public String getFullName() {
         return FullName;
     }
 
-    public void setFullName(String fullName) {
-        FullName = fullName;
+    public void setFullName(String FullName) {
+        this.FullName = FullName;
     }
 
     public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(String phone) {
-        Phone = phone;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
+    public void setPhone(String Phone) {
+        this.Phone = Phone;
     }
 
     public String getAddress() {
         return Address;
     }
 
-    public void setAddress(String address) {
-        Address = address;
-    }
-
-    public LocalDate getCreatedAt() {
-        return CreatedAt;
-    }
-
-    public void setCreatedAt(LocalDate createdAt) {
-        CreatedAt = createdAt;
-    }
-
-    public LocalDate getModifiedAt() {
-        return ModifiedAt;
-    }
-
-    public void setModifiedAt(LocalDate modifiedAt) {
-        ModifiedAt = modifiedAt;
-    }
-
-    public boolean isDeleted() {
-        return isDeleted;
-    }
-
-    public void setDeleted(boolean deleted) {
-        isDeleted = deleted;
+    public void setAddress(String Address) {
+        this.Address = Address;
     }
 }
