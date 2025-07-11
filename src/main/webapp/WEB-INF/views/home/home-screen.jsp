@@ -7,9 +7,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="<c:url value='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'/>">
-        <link rel="stylesheet" href="<c:url value='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'/>">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
         <link rel="stylesheet" href="<c:url value='/assets/css/styles.css'/>">
+        <link rel="stylesheet" href="<c:url value='/assets/css/output.css'/>">
         <title>MaxWheels</title>
     </head>
 
@@ -43,7 +44,7 @@
                     <a href="#" class="btn">Google</a>
                     <a href="" class="btn">Facebook</a>
                 </div>
-                <p>Don?t have an account? <a href="<c:url value='/sign-up'/>">Create account</a></p>
+                <p>Don't have an account? <a href="<c:url value='/sign-up'/>">Create account</a></p>
             </form>
         </div>
         <section class="home" id="home">
@@ -90,7 +91,7 @@
                         <div class="content">
                             <h3>New model</h3>
                             <div class="price">
-                                <span>Price:</span> R$ 120.000,00
+                                <span>Price:</span> $ 120.000,00
                             </div>
                             <p>
                                 Novo
@@ -139,7 +140,7 @@
                     <div class="swiper-slide box">
                         <img src="assets/images/vehicle-4.png" alt="vehicle-4">
                         <div class="content">
-                            <h3>Modelo Novo</h3>
+                            <h3>New model</h3>
                             <div class="price">
                                 <span>Price:</span> $ 120.000,00
                             </div>
