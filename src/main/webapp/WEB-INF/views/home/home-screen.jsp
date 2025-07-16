@@ -27,26 +27,10 @@
                 <a href="#contact" class="">Contacts</a>
             </nav>
             <div id="login-btn">
-                <button class="btn" href="<c:url value='/login'/>">Login</button>
+                <button class="btn" onclick="window.location.href='${pageContext.request.contextPath}/auth/login'">Login</button>
                 <i class="far fa-user"></i>
             </div>
         </header>
-        <div class="login-form-container">
-            <span class="fas fa-times" id="close-login-form"></span>
-            <form action="${pageContext.request.contextPath}/login" method="post">
-                <h3>Login</h3>
-                <input type="email" class="box" placeholder="E-mail">
-                <input type="password" name="" id="" placeholder="Senha" class="box">
-                <p>Forgot my password <a href="<c:url value='/forgot-password'/>">click here</a></p>
-                <input type="submit" value="Entrar" class="btn">
-                <p>Or log in with </p>
-                <div class="buttons">
-                    <a href="#" class="btn">Google</a>
-                    <a href="" class="btn">Facebook</a>
-                </div>
-                <p>Don't have an account? <a href="<c:url value='/sign-up'/>">Create account</a></p>
-            </form>
-        </div>
         <section class="home" id="home">
             <h1 class="home-parallax" data-speed="-2">Your new car is here</h1>
             <img class="home-parallax" data-speed="5" src="<c:url value='/assets/images/home-img.png'/>" alt="home image">
@@ -508,7 +492,7 @@
                     <h3>Informações de contato</h3>
                     <a href="#"><i class="fas fa-phone"></i>(41) 3233-2504</a>
                     <a href="#"><i class="fa-brands fa-whatsapp"></i>(41) 99541-2014</a>
-                    <a href=""><i class="fas fa-envelope"></i>contato@maxwheeels.com</a>
+                    <a href=""><i class="fas fa-envelope"></i>maiphuhai123@gmail.com</a>
                     <a href=""><i class="fa-solid fa-map-location-dot"></i> BR-116, 15625 - Xaxim, Curitiba - PR</a>
                 </div>
                 <div class="box">

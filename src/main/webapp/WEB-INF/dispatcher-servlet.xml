@@ -23,7 +23,7 @@
           class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
 
     <!-- SQL Server DataSource -->
-    <bean idbb ="dataSource"
+    <bean id ="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName"
                   value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />

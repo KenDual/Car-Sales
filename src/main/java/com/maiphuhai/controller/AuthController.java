@@ -20,17 +20,10 @@ public class AuthController {
     /* ==============================================================
        1.  LOGIN
        ============================================================== */
-    /**
-     * Show login form
-     */
     @GetMapping("/login")
     public String showLogin() {
         return "auth/login";
     }
-
-    /**
-     * Handle login submit
-     */
     @PostMapping("/login")
     public String doLogin(@RequestParam String email,
             @RequestParam String password,
@@ -43,9 +36,9 @@ public class AuthController {
             return "auth/login";
         }
 
-        model.addAttribute("currentUser", user);   // put to session
+        model.addAttribute("currentUser", user);
         ra.addFlashAttribute("message", "Đăng nhập thành công");
-        return "redirect:/";                       // trang home
+        return "redirect:/";
     }
 
     /* ==============================================================
@@ -55,7 +48,6 @@ public class AuthController {
     public String showRegister() {
         return "auth/sign-up";
     }
-
     @PostMapping("/sign-up")
     public String doRegister(@RequestParam String email,
             @RequestParam String password,
@@ -122,7 +114,7 @@ public class AuthController {
        ============================================================== */
     @GetMapping("/logout")
     public String logout(SessionStatus status, RedirectAttributes ra) {
-        status.setComplete();                // xoá session "currentUser"
+        status.setComplete();
         ra.addFlashAttribute("message", "Bạn đã đăng xuất!");
         return "redirect:/auth/login";
     }
